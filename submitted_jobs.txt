@@ -1,0 +1,8 @@
+JobID           JobName      User    Account  Partition  AllocCPUS              Submit               Start    Elapsed      State ExitCode 
+------------ ---------- --------- ---------- ---------- ---------- ------------------- ------------------- ---------- ---------- -------- 
+22799215_1    summarize    qrp3bq     ds2022    gpu-mig          2 2026-11-11T00:03:34 2026-11-11T01:23:03   00:00:16  COMPLETED      0:0 
+22799215_1.+      batch               ds2022                     2 2026-11-11T01:23:03 2026-11-11T01:23:03   00:00:16  COMPLETED      0:0 
+22799215_1.+     extern               ds2022                     2 2026-11-11T01:23:03 2026-11-11T01:23:03   00:00:16  COMPLETED      0:0 
+22823771_[1]  summarize    qrp3bq     ds2022    gpu-mig          0 2026-11-11T13:41:50                None   00:00:00 CANCELLED+      0:0 
+22823939_[1]  summarize    qrp3bq     ds2022    gpu-mig          0 2026-11-11T13:44:36                None   00:00:00 CANCELLED+      0:0 
+22823943_[1+  summarize    qrp3bq     ds2022    gpu-mig          0 2026-11-11T13:44:50             Unknown   00:00:00    PENDING      0:0 
