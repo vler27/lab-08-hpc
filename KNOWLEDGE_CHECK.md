@@ -12,7 +12,7 @@ Redirect the command's output to `results/job-history.txt` and include the file 
 
 **Your answer:** Provide the entire command you used, including all CLI options.
 
-...
+. . . sacct -S 2026-11-04 -X --format=JobID,JobName,Partition,State,Start,Elapsed,ExitCode > results/job-history.txt
 
 ## 2. Slurm: did every array task run at the same time?
 
@@ -24,7 +24,7 @@ You submitted your entire job array with one `sbatch` command, but Slurm schedul
 
 **Your answer:** Did all tasks in the array start at the same time? Was the elapsed time identical for every task? Explain why or why not.
 
-...
+... No, the tasks did not all start at the same time as the elapsed time had diffent start time ranges from 16s to 20s. Since the gpu-mig partition has only 32 GPU slices in the whole cluster, so Slurm took as slices. Each task summarized a different book and the time to load in the model and save in MongoDB.   
 
 ## 3. Slurm: did my job use what it asked for?
 
@@ -36,5 +36,4 @@ Suppose your next job array has 1,000 books instead of 101. Before you submit it
 
 **Your answer:** How much memory and time did the task use, compared with what your script asked for? What would you change in your script, and why?
 
-...
-
+The task used 21 GB of memory and time of 20 seconds. It used 13.81% of the 16 GB I requested and used 20 seconds of the 5 minutes I requested. Therefore, my script requests were a lot more than it needed. Therefore for 1,000 books, I would lower the amount of memory to like 3 GB and time to like 2 minutes to make a lot of smaller requests which would help Slurm start each task sooner to help get through all 1,000 books. 

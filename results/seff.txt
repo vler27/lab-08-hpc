@@ -1,0 +1,12 @@
+Job ID: 22863673
+Array Job ID: 22823943_1
+Cluster: shen
+User/Group: qrp3bq/users
+State: COMPLETED (exit code 0)
+Nodes: 1
+Cores per node: 2
+CPU Utilized: 00:00:11
+CPU Efficiency: 27.50% of 00:00:40 core-walltime
+Job Wall-clock time: 00:00:20
+Memory Utilized: 2.21 GB
+Memory Efficiency: 13.81% of 16.00 GB (16.00 GB/node)
